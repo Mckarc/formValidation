@@ -13,19 +13,39 @@
     <section>
         <div class="inner-container"> 
             <h1>Create Account</h1>
-            <form action="">
+            <form class="form" id="signUp" action="">
                 <label for="emai">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Enter email">
+                <input type="email" name="email" id="email" placeholder="Enter email" autocomplete="off">
+                <small></small>
+
                 <label for="username">Username:</label>
-                <input type="text" name="username" id="username" placeholder="Enter username">
+                <input type="text" name="username" id="username" placeholder="Enter username" autocomplete="off">
+                <small></small>
+
                 <label for="password">Password:</label>
-                <input type="password" name="password" id="password" placeholder="Enter password">
-                <i class="one bi bi-eye-slash" id="togglePassword"></i>
+                <div class="form-inner-container">
+                    <input type="password" name="password" id="password" placeholder="Enter password" autocomplete="off">
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                </div>
+                <small></small>
+
                 <label for="password">Confirm Password:</label>
-                <input type="password" name="confirmpassword" id="confirmPassword" placeholder="Reenter password">
-                <i class="two bi bi-eye-slash" id="toggleConfirmPassword"></i>
+                <div class="form-inner-container">
+                    <input type="password" name="confirmpassword" id="confirmPassword" placeholder="Reenter password" autocomplete="off">
+                    <i class="bi bi-eye-slash" id="toggleConfirmPassword"></i>
+                </div>
+                <small></small>
+
                 <button type="sumbit" id="sumbit" class="btn-signup" href="#">Sign up</button>
             </form>
+            
+            <div class="forget-password-container">
+                <div class="remember-container">
+                    <input type="checkbox" name="remember" value="save">
+                    <p>Remember me</p>
+                </div>
+                <p>Forget <a class="reset" href="#">Password</a></p>
+            </div>
         </div> 
     </section>
 
