@@ -14,29 +14,43 @@
         <div class="inner-container"> 
             <h1>Create Account</h1>
             <form class="form" id="signUp" action="">
-                <label for="emai">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Enter email" autocomplete="off">
-                <small></small>
+                <div class="form-field">
+                    <label for="emai">Email:</label>
+                    <input type="email" name="email" id="email" 
+                    placeholder="Enter email" autocomplete="off">
+                    <small></small>
+                </div>
 
-                <label for="username">Username:</label>
-                <input type="text" name="username" id="username" placeholder="Enter username" autocomplete="off">
-                <small></small>
+                <div class="form-field">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" 
+                    placeholder="Enter username" autocomplete="off">
+                    <small></small>
+                </div>
 
-                <label for="password">Password:</label>
-                <div class="form-inner-container">
-                    <input type="password" name="password" id="password" placeholder="Enter password" autocomplete="off">
+                <div class="form-field">
+                    <label for="password">Password:</label>
+                    <div class="form-inner-container">
+                    <input type="password" name="password" id="password" 
+                    placeholder="Enter password" autocomplete="off">
                     <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    </div>
+                    <small></small>
                 </div>
-                <small></small>
 
-                <label for="password">Confirm Password:</label>
-                <div class="form-inner-container">
-                    <input type="password" name="confirmpassword" id="confirmPassword" placeholder="Reenter password" autocomplete="off">
+                <div class="form-field">
+                    <label for="password">Confirm Password:</label>
+                    <div class="form-inner-container">
+                    <input type="password" name="confirmpassword" id="confirmPassword" 
+                    placeholder="Reenter password" autocomplete="off">
                     <i class="bi bi-eye-slash" id="toggleConfirmPassword"></i>
-                </div>
-                <small></small>
+                    </div>
+                    <small></small>
+                </div> 
 
-                <button type="sumbit" id="sumbit" class="btn-signup" href="#">Sign up</button>
+                <div class="form-field">
+                    <button type="sumbit" id="sumbit" class="btn-signup" href="#">Sign up</button>
+                </div>
             </form>
             
             <div class="forget-password-container">
