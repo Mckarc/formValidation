@@ -42,7 +42,7 @@ const showError = (input, message) => {
 };
 const showSuccess = (input) => {
     // get the form field element
-    const formField = input.parentElement:
+    const formField = input.parentElement;
     // remove the error class
     formField.classList.remove('error');
     formField.classList.add('success');
